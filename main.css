@@ -1,0 +1,159 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container{
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header{
+    padding: 16px 0;
+    background-color: #54069a;
+    color: #fff;
+}
+
+
+nav li{
+    display: inline;
+    margin-left: 16px;
+    font-size: 18px;
+}
+
+nav li a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header .container,
+#about-shop .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+section .container{
+    align-items: flex-start;
+}
+
+section{
+    padding: 24px 0;
+    color: #54069a;
+}
+
+section h2{
+    margin-bottom: 24px;
+    padding-bottom: 8px;
+    font-style: italic;
+    border-bottom: 2px solid #54069a;
+}
+
+section p{
+    margin-bottom: 8px;
+}
+
+.logo-shop{
+    max-width: 33%;
+    margin-right: 32px;
+}
+
+.container-flex{
+    display: flex;
+}
+
+
+.lista-produtos{
+    display: grid;
+    grid-template-columns: repeat(4, 24.25%);
+    column-gap: 1%;
+    row-gap: 5%;
+}
+
+.lista-produtos li{
+    list-style: none;
+
+}
+.lista-produtos img{
+    width: 100%;
+}
+
+.lista-produtos h3,p{
+    margin: 16px 0;
+    text-align: justify;
+}
+
+button{
+    display: block;
+    width: 100%;
+    padding: 16px 0;
+    border: none;
+    background-color: #54069a;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    font-style: italic;
+    cursor: pointer;
+    border-radius: 6px;
+    margin-bottom: 20px;
+}
+
+@media screen and (max-width: 767px){
+    h3{
+        font-size: 25px;
+    }
+    h1{
+        font-size: 40px;
+    }
+    .lista-produtos{
+        display: block;
+        margin-bottom: 5%;
+    }
+
+    nav li{
+        display: block;
+    }
+
+    .container{
+        max-width: 90%;
+    }
+    
+    #about-shop .container{
+        display: block;
+    }
+
+    .logo-shop{
+        width: 100%;
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px){
+    h3{
+        font-size: 24px;
+    }
+    .container{
+        max-width: 90%;
+    }
+    #about-shop .container{
+        display: block;
+    }
+
+    .logo-shop{
+        width: 100%;
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .lista-produtos{
+        grid-template-columns: repeat(2, 47.5%);
+        column-gap: 5%;
+        margin-bottom: 5%;
+    }
+
+}
